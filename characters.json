@@ -1,0 +1,42 @@
+[
+  {
+    "img": "images/dragonball/goku.jpg",
+    "name": "Goku",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/vegeta.jpg",
+    "name": "Vegeta",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/naruto/naruto.jpg",
+    "name": "Naruto",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/sasuke.jpg",
+    "name": "Sasuke",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/onepiece/luffy.jpg",
+    "name": "Luffy",
+    "anime": "One Piece"
+  },
+  {
+    "img": "images/onepiece/zorro.jpg",
+    "name": "Zorro",
+    "anime": "One Piece"
+  },
+  {
+    "img": "images/bleach/ichigo.jpg",
+    "name": "Ichigo",
+    "anime": "Bleach"
+  },
+  {
+    "img": "images/bleach/rukia.jpg",
+    "name": "Rukia",
+    "anime": "Bleach"
+  }
+]

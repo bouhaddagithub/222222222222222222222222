@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Anime Character Guess Game</h1>
+
+<!-- MODE SELECT -->
+<div id="modeScreen">
+  <button onclick="setSolo()">Solo</button>
+  <button onclick="setMulti()">Multiplayer</button>
+</div>
+
+<!-- MULTIPLAYER SETUP -->
+<div id="multiSetup" style="display:none">
+  <input id="p1Name" placeholder="Your name" maxlength="12">
+  <input id="p2Name" placeholder="Friend's name" maxlength="12">
+  <button onclick="startMulti()">Start Multiplayer</button>
+</div>
+
+<!-- GAME -->
+<div id="gameScreen" style="display:none">
+
+  <div id="attemptInfo">Attempt 1 / 3</div>
+  <div id="scoreBoard"></div>
+
+  <div id="gameContainer">
+    <img id="characterImage" src="">
+  </div>
+
+  <h2 id="animeCategory"></h2>
+  <p id="result"></p>
+
+  <!-- SOLO GUESS -->
+  <div id="soloGuess">
+    <input id="guessInput" placeholder="Type character name">
+    <button onclick="submitSolo()">Guess</button>
+  </div>
+
+  <!-- MULTIPLAYER GUESS -->
+  <div id="multiGuess" style="display:none">
+    <div id="p1GuessArea">
+      <strong id="p1Label"></strong>
+      <input id="p1Input" placeholder="Type character name">
+      <button onclick="submitP1()">Guess</button>
+      <span id="p1Status"></span>
+    </div>
+    <div id="p2GuessArea">
+      <strong id="p2Label"></strong>
+      <input id="p2Input" placeholder="Type character name">
+      <button onclick="submitP2()">Guess</button>
+      <span id="p2Status"></span>
+    </div>
+  </div>
+
+  <button id="nextBtn" style="display:none" onclick="nextRound()">Next Round</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
