@@ -1,7 +1,112 @@
 [
   {
+    "img": "images/dragonball/17.webp",
+    "name": "17",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/18.jpg",
+    "name": "18",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/19.webp",
+    "name": "19",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/beerus.png",
+    "name": "Beerus",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/broly.jpg",
+    "name": "Broly",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/bulma.jpg",
+    "name": "Bulma",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/cell.jpg",
+    "name": "Cell",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/chaozu.png",
+    "name": "Chaozu",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/drgero.jpg",
+    "name": "Drgero",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/frieza.jpg",
+    "name": "Frieza",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/ginyu.jpg",
+    "name": "Ginyu",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/gohan.jpg",
+    "name": "Gohan",
+    "anime": "Dragon Ball"
+  },
+  {
     "img": "images/dragonball/goku.jpg",
     "name": "Goku",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/krilin.png",
+    "name": "Krilin",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/nappa.jpg",
+    "name": "Nappa",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/piccolo.jpg",
+    "name": "Piccolo",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/raditz.jpg",
+    "name": "Raditz",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/recoome.jpg",
+    "name": "Recoome",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/roshi.jpg",
+    "name": "Roshi",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/superbuu.webp",
+    "name": "Superbuu",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/tien.png",
+    "name": "Tien",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/trunks.jpeg",
+    "name": "Trunks",
     "anime": "Dragon Ball"
   },
   {
@@ -10,13 +115,208 @@
     "anime": "Dragon Ball"
   },
   {
+    "img": "images/dragonball/whis.jpg",
+    "name": "Whis",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/dragonball/yamacha.jpg",
+    "name": "Yamacha",
+    "anime": "Dragon Ball"
+  },
+  {
+    "img": "images/naruto/3rdhokage.jpg",
+    "name": "3Rdhokage",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/anko.jpg",
+    "name": "Anko",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/asuma.jpg",
+    "name": "Asuma",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/choji.jpg",
+    "name": "Choji",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/danzo.jpg",
+    "name": "Danzo",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/deidara.jpg",
+    "name": "Deidara",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/garra.jpg",
+    "name": "Garra",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/guy.jpg",
+    "name": "Guy",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/haku.jpg",
+    "name": "Haku",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/hidan.png",
+    "name": "Hidan",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/hinata.jpg",
+    "name": "Hinata",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/ino.jpg",
+    "name": "Ino",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/itachi .jpg",
+    "name": "Itachi ",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/jiraya.jpg",
+    "name": "Jiraya",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kabuto.jpg",
+    "name": "Kabuto",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kakashi.jpg",
+    "name": "Kakashi",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kakuzu.jpg",
+    "name": "Kakuzu",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kankuro.jpg",
+    "name": "Kankuro",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kiba.jpg",
+    "name": "Kiba",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kimimaro.jpg",
+    "name": "Kimimaro",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kisame.jpg",
+    "name": "Kisame",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/konan.jpg",
+    "name": "Konan",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/kurinai.jpg",
+    "name": "Kurinai",
+    "anime": "Naruto"
+  },
+  {
     "img": "images/naruto/naruto.jpg",
     "name": "Naruto",
     "anime": "Naruto"
   },
   {
+    "img": "images/naruto/neji.jpg",
+    "name": "Neji",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/obito.jpg",
+    "name": "Obito",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/orochimaru.jpg",
+    "name": "Orochimaru",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/pain.jpg",
+    "name": "Pain",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/rocklee.jpg",
+    "name": "Rocklee",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/sai.jpg",
+    "name": "Sai",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/sakura.jpg",
+    "name": "Sakura",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/sasori.jpg",
+    "name": "Sasori",
+    "anime": "Naruto"
+  },
+  {
     "img": "images/naruto/sasuke.jpg",
     "name": "Sasuke",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/shikamaru.jpg",
+    "name": "Shikamaru",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/shino.png",
+    "name": "Shino",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/temari.jpg",
+    "name": "Temari",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/tsunade.png",
+    "name": "Tsunade",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/yamato.jpg",
+    "name": "Yamato",
+    "anime": "Naruto"
+  },
+  {
+    "img": "images/naruto/zabuza.jpg",
+    "name": "Zabuza",
     "anime": "Naruto"
   },
   {
