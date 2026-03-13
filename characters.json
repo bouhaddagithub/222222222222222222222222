@@ -1,342 +1,1586 @@
 [
   {
-    "img": "images/dragonball/17.webp",
-    "name": "17",
+    "imgs": [
+      "images/dragonball/beerus.png"
+    ],
+    "names": [
+      "Beerus",
+      "beris",
+      "fox",
+      "berus"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/18.jpg",
-    "name": "18",
+    "imgs": [
+      "images/dragonball/broly.jpg"
+    ],
+    "names": [
+      "Broly",
+      "anger issue"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/19.webp",
-    "name": "19",
+    "imgs": [
+      "images/dragonball/bulma.jpg"
+    ],
+    "names": [
+      "Bulma",
+      "balma",
+      "rich"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/beerus.png",
-    "name": "Beerus",
+    "imgs": [
+      "images/dragonball/cell.jpg"
+    ],
+    "names": [
+      "Cell",
+      "perfect"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/broly.jpg",
-    "name": "Broly",
+    "imgs": [
+      "images/dragonball/chaozu.png"
+    ],
+    "names": [
+      "Chaozu",
+      "tchawzo",
+      "chawzo",
+      "pokemon"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/bulma.jpg",
-    "name": "Bulma",
+    "imgs": [
+      "images/dragonball/drgero.jpg"
+    ],
+    "names": [
+      "Drgero",
+      "dr gero",
+      "c20",
+      "scientist"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/cell.jpg",
-    "name": "Cell",
+    "imgs": [
+      "images/dragonball/eighteen.jpg"
+    ],
+    "names": [
+      "Eighteen",
+      "18",
+      "c18",
+      "android 18",
+      "washing machine"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/chaozu.png",
-    "name": "Chaozu",
+    "imgs": [
+      "images/dragonball/frieza.jpg"
+    ],
+    "names": [
+      "Frieza",
+      "freeza",
+      "friza",
+      "monkey racist"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/drgero.jpg",
-    "name": "Drgero",
+    "imgs": [
+      "images/dragonball/ginyu.jpg"
+    ],
+    "names": [
+      "Ginyu",
+      "ginya",
+      "gay"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/frieza.jpg",
-    "name": "Frieza",
+    "imgs": [
+      "images/dragonball/gohan.jpg"
+    ],
+    "names": [
+      "Gohan",
+      "potential"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/ginyu.jpg",
-    "name": "Ginyu",
+    "imgs": [
+      "images/dragonball/goku.jpg"
+    ],
+    "names": [
+      "Goku",
+      "kakaroto",
+      "monkey"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/gohan.jpg",
-    "name": "Gohan",
+    "imgs": [
+      "images/dragonball/krilin.png"
+    ],
+    "names": [
+      "Krilin",
+      "krillin",
+      "bald"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/goku.jpg",
-    "name": "Goku",
+    "imgs": [
+      "images/dragonball/nappa.jpg"
+    ],
+    "names": [
+      "Nappa",
+      "nabba",
+      "napa",
+      "naba",
+      "bomber"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/krilin.png",
-    "name": "Krilin",
+    "imgs": [
+      "images/dragonball/nineteen.webp"
+    ],
+    "names": [
+      "Nineteen",
+      "19",
+      "c19",
+      "android 19",
+      "machine"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/nappa.jpg",
-    "name": "Nappa",
+    "imgs": [
+      "images/dragonball/piccolo.jpg"
+    ],
+    "names": [
+      "Piccolo",
+      "bicola",
+      "picolo",
+      "aura"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/piccolo.jpg",
-    "name": "Piccolo",
+    "imgs": [
+      "images/dragonball/raditz.jpg"
+    ],
+    "names": [
+      "Raditz",
+      "radits",
+      "radit",
+      "brother"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/raditz.jpg",
-    "name": "Raditz",
+    "imgs": [
+      "images/dragonball/recoome.jpg"
+    ],
+    "names": [
+      "Recoome",
+      "ika",
+      "wwe"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/recoome.jpg",
-    "name": "Recoome",
+    "imgs": [
+      "images/dragonball/roshi.jpg"
+    ],
+    "names": [
+      "Roshi",
+      "master roshi",
+      "rochi",
+      "jackie chan"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/roshi.jpg",
-    "name": "Roshi",
+    "imgs": [
+      "images/dragonball/seventeen.webp"
+    ],
+    "names": [
+      "Seventeen",
+      "17",
+      "c17",
+      "android 17",
+      "mvp"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/superbuu.webp",
-    "name": "Superbuu",
+    "imgs": [
+      "images/dragonball/superbuu.webp"
+    ],
+    "names": [
+      "Superbuu",
+      "super buu",
+      "buu",
+      "candy"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/tien.png",
-    "name": "Tien",
+    "imgs": [
+      "images/dragonball/tien.png"
+    ],
+    "names": [
+      "Tien",
+      "tian",
+      "3eyes"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/trunks.jpeg",
-    "name": "Trunks",
+    "imgs": [
+      "images/dragonball/trunks.jpeg"
+    ],
+    "names": [
+      "Trunks",
+      "princess"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/vegeta.jpg",
-    "name": "Vegeta",
+    "imgs": [
+      "images/dragonball/vegeta.jpg"
+    ],
+    "names": [
+      "Vegeta",
+      "prince"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/whis.jpg",
-    "name": "Whis",
+    "imgs": [
+      "images/dragonball/whis.jpg"
+    ],
+    "names": [
+      "Whis",
+      "angel"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/dragonball/yamacha.jpg",
-    "name": "Yamacha",
+    "imgs": [
+      "images/dragonball/yamacha.jpg"
+    ],
+    "names": [
+      "Yamacha",
+      "loser"
+    ],
     "anime": "Dragon Ball"
   },
   {
-    "img": "images/naruto/3rdhokage.jpg",
-    "name": "3Rdhokage",
+    "imgs": [
+      "images/naruto/3rdhokage.jpg"
+    ],
+    "names": [
+      "3Rdhokage",
+      "hiruzen",
+      "sarutobi"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/anko.jpg",
-    "name": "Anko",
+    "imgs": [
+      "images/naruto/ai.jpg"
+    ],
+    "names": [
+      "Ay",
+      "raikage"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/asuma.jpg",
-    "name": "Asuma",
+    "imgs": [
+      "images/naruto/anko.jpg"
+    ],
+    "names": [
+      "Anko",
+      "fatty"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/choji.jpg",
-    "name": "Choji",
+    "imgs": [
+      "images/naruto/asuma.jpg"
+    ],
+    "names": [
+      "Asuma",
+      "smoky"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/danzo.jpg",
-    "name": "Danzo",
+    "imgs": [
+      "images/naruto/boruto.jpg"
+    ],
+    "names": [
+      "Boruto",
+      "brat"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/deidara.jpg",
-    "name": "Deidara",
+    "imgs": [
+      "images/naruto/choji.jpg"
+    ],
+    "names": [
+      "Choji",
+      "fat"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/garra.jpg",
-    "name": "Garra",
+    "imgs": [
+      "images/naruto/danzo.jpg"
+    ],
+    "names": [
+      "Danzo",
+      "peace"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/guy.jpg",
-    "name": "Guy",
+    "imgs": [
+      "images/naruto/darui.jpg"
+    ],
+    "names": [
+      "Darui",
+      "nigga"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/haku.jpg",
-    "name": "Haku",
+    "imgs": [
+      "images/naruto/deidara.jpg"
+    ],
+    "names": [
+      "Deidara",
+      "art"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/hidan.png",
-    "name": "Hidan",
+    "imgs": [
+      "images/naruto/garra.jpg"
+    ],
+    "names": [
+      "Garra",
+      "sand"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/hinata.jpg",
-    "name": "Hinata",
+    "imgs": [
+      "images/naruto/guy.jpg"
+    ],
+    "names": [
+      "Guy",
+      "might guy",
+      "badass"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/ino.jpg",
-    "name": "Ino",
+    "imgs": [
+      "images/naruto/haku.jpg"
+    ],
+    "names": [
+      "Haku",
+      "boygirl"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/itachi .jpg",
-    "name": "Itachi ",
+    "imgs": [
+      "images/naruto/hidan.png"
+    ],
+    "names": [
+      "Hidan",
+      "immortal"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/jiraya.jpg",
-    "name": "Jiraya",
+    "imgs": [
+      "images/naruto/hinata.jpg"
+    ],
+    "names": [
+      "Hinata",
+      "wife"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kabuto.jpg",
-    "name": "Kabuto",
+    "imgs": [
+      "images/naruto/ino.jpg"
+    ],
+    "names": [
+      "Ino",
+      "mind"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kakashi.jpg",
-    "name": "Kakashi",
+    "imgs": [
+      "images/naruto/itachi .jpg"
+    ],
+    "names": [
+      "Itachi",
+      "crow"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kakuzu.jpg",
-    "name": "Kakuzu",
+    "imgs": [
+      "images/naruto/jiraya.jpg"
+    ],
+    "names": [
+      "Jiraya",
+      "pervy sage"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kankuro.jpg",
-    "name": "Kankuro",
+    "imgs": [
+      "images/naruto/kabuto.jpg"
+    ],
+    "names": [
+      "Kabuto",
+      "henshman"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kiba.jpg",
-    "name": "Kiba",
+    "imgs": [
+      "images/naruto/kaguya.jpg"
+    ],
+    "names": [
+      "Kaguya",
+      "alien"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kimimaro.jpg",
-    "name": "Kimimaro",
+    "imgs": [
+      "images/naruto/kakashi.jpg"
+    ],
+    "names": [
+      "Kakashi",
+      "copy ninja"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kisame.jpg",
-    "name": "Kisame",
+    "imgs": [
+      "images/naruto/kakuzu.jpg"
+    ],
+    "names": [
+      "Kakuzu",
+      "hart"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/konan.jpg",
-    "name": "Konan",
+    "imgs": [
+      "images/naruto/kankuro.jpg"
+    ],
+    "names": [
+      "Kankuro",
+      "puppet"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/kurinai.jpg",
-    "name": "Kurinai",
+    "imgs": [
+      "images/naruto/karin.jpg"
+    ],
+    "names": [
+      "Karin",
+      "simp"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/naruto.jpg",
-    "name": "Naruto",
+    "imgs": [
+      "images/naruto/kiba.jpg"
+    ],
+    "names": [
+      "Kiba",
+      "dog"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/neji.jpg",
-    "name": "Neji",
+    "imgs": [
+      "images/naruto/killerbee.webp"
+    ],
+    "names": [
+      "Killerbee",
+      "killer bee",
+      "kiler bee",
+      "bee",
+      "rapper"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/obito.jpg",
-    "name": "Obito",
+    "imgs": [
+      "images/naruto/kimimaro.jpg"
+    ],
+    "names": [
+      "Kimimaro",
+      "kimmimaro",
+      "bone guy"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/orochimaru.jpg",
-    "name": "Orochimaru",
+    "imgs": [
+      "images/naruto/kisame.jpg"
+    ],
+    "names": [
+      "Kisame",
+      "shark"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/pain.jpg",
-    "name": "Pain",
+    "imgs": [
+      "images/naruto/konan.jpg"
+    ],
+    "names": [
+      "Konan",
+      "paper"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/rocklee.jpg",
-    "name": "Rocklee",
+    "imgs": [
+      "images/naruto/kurinai.jpg"
+    ],
+    "names": [
+      "Kurinai",
+      "genjustsu"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/sai.jpg",
-    "name": "Sai",
+    "imgs": [
+      "images/naruto/madara.jpg"
+    ],
+    "names": [
+      "Madara",
+      "uchiha"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/sakura.jpg",
-    "name": "Sakura",
+    "imgs": [
+      "images/naruto/mai.jpg"
+    ],
+    "names": [
+      "Mai",
+      "woman"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/sasori.jpg",
-    "name": "Sasori",
+    "imgs": [
+      "images/naruto/minato.jpg"
+    ],
+    "names": [
+      "Minato",
+      "flash"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/sasuke.jpg",
-    "name": "Sasuke",
+    "imgs": [
+      "images/naruto/naruto.jpg"
+    ],
+    "names": [
+      "Naruto",
+      "dattebayo"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/shikamaru.jpg",
-    "name": "Shikamaru",
+    "imgs": [
+      "images/naruto/neji.jpg"
+    ],
+    "names": [
+      "Neji",
+      "fate"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/shino.png",
-    "name": "Shino",
+    "imgs": [
+      "images/naruto/obito.jpg"
+    ],
+    "names": [
+      "Obito",
+      "rin"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/temari.jpg",
-    "name": "Temari",
+    "imgs": [
+      "images/naruto/orochimaru.jpg"
+    ],
+    "names": [
+      "Orochimaru",
+      "weird shit"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/tsunade.png",
-    "name": "Tsunade",
+    "imgs": [
+      "images/naruto/pain.jpg"
+    ],
+    "names": [
+      "Pain",
+      "nagato"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/yamato.jpg",
-    "name": "Yamato",
+    "imgs": [
+      "images/naruto/rocklee.jpg"
+    ],
+    "names": [
+      "Rocklee",
+      "rock lee",
+      "lee",
+      "taijutsu"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/naruto/zabuza.jpg",
-    "name": "Zabuza",
+    "imgs": [
+      "images/naruto/sai.jpg"
+    ],
+    "names": [
+      "Sai",
+      "smile"
+    ],
     "anime": "Naruto"
   },
   {
-    "img": "images/onepiece/luffy.jpg",
-    "name": "Luffy",
+    "imgs": [
+      "images/naruto/sakura.jpg"
+    ],
+    "names": [
+      "Sakura",
+      "kunoichi"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/sasori.jpg"
+    ],
+    "names": [
+      "Sasori",
+      "puppet"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/sasuke.jpg"
+    ],
+    "names": [
+      "Sasuke",
+      "edge lord"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/shikamaru.jpg"
+    ],
+    "names": [
+      "Shikamaru",
+      "genuis"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/shino.png"
+    ],
+    "names": [
+      "Shino",
+      "bugs"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/suigetsu.jpg"
+    ],
+    "names": [
+      "Suigetsu",
+      "sigetsu",
+      "water boy"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/temari.jpg"
+    ],
+    "names": [
+      "Temari",
+      "wind"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/tsunade.png"
+    ],
+    "names": [
+      "Tsunade",
+      "106",
+      "gambler"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/yamato.jpg"
+    ],
+    "names": [
+      "Yamato",
+      "wood"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/naruto/zabuza.jpg"
+    ],
+    "names": [
+      "Zabuza",
+      "mist"
+    ],
+    "anime": "Naruto"
+  },
+  {
+    "imgs": [
+      "images/onepiece/Garp.jpg"
+    ],
+    "names": [
+      "Garp",
+      "garb",
+      "grandpa"
+    ],
     "anime": "One Piece"
   },
   {
-    "img": "images/onepiece/zorro.jpg",
-    "name": "Zorro",
+    "imgs": [
+      "images/onepiece/ace.jpg"
+    ],
+    "names": [
+      "Ace",
+      "fire"
+    ],
     "anime": "One Piece"
   },
   {
-    "img": "images/bleach/ichigo.jpg",
-    "name": "Ichigo",
+    "imgs": [
+      "images/onepiece/akainu.jpg"
+    ],
+    "names": [
+      "Akainu",
+      "lava",
+      "akayno"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/akoji.jpg"
+    ],
+    "names": [
+      "Akoji",
+      "ice"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/arlong.jpg"
+    ],
+    "names": [
+      "Arlong",
+      "fish"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/bigmom.jpeg"
+    ],
+    "names": [
+      "Bigmom",
+      "big"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/brook.jpg"
+    ],
+    "names": [
+      "Brook",
+      "skeleton"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/buggy.jpg"
+    ],
+    "names": [
+      "Buggy",
+      "clown",
+      "bugy"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/chopper.webp"
+    ],
+    "names": [
+      "Chopper",
+      "animal",
+      "choper"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/crocodile.jpg"
+    ],
+    "names": [
+      "Crocodile",
+      "mr0",
+      "luffy mom"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/doflamingo.jpg"
+    ],
+    "names": [
+      "Doflamingo",
+      "doffy",
+      "flamingo"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/enel.jpg"
+    ],
+    "names": [
+      "Enel",
+      "thunder"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/foxy.jpg"
+    ],
+    "names": [
+      "Foxy",
+      "filler"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/franky.jpg"
+    ],
+    "names": [
+      "Franky",
+      "balls",
+      "robot"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/hankock.jpg"
+    ],
+    "names": [
+      "Hankock",
+      "hot"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/ivanhok.png"
+    ],
+    "names": [
+      "Ivanhok",
+      "trans"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/kid.jpg"
+    ],
+    "names": [
+      "Kid",
+      "boy"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/kizaru.jpg"
+    ],
+    "names": [
+      "Kizaru",
+      "light"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/koby.jpg"
+    ],
+    "names": [
+      "Koby",
+      "cry"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/kurro.png"
+    ],
+    "names": [
+      "Kurro",
+      "kuro",
+      "cat"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/law.jpg"
+    ],
+    "names": [
+      "Law",
+      "low",
+      "trafajar",
+      "room"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/luffy.jpg"
+    ],
+    "names": [
+      "Luffy",
+      "lufy",
+      "monkey"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/mihawk.jpg"
+    ],
+    "names": [
+      "Mihawk",
+      "mihok",
+      "sword"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/mj.jpg"
+    ],
+    "names": [
+      "Mj",
+      "michael jackson"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/mrone.jpg"
+    ],
+    "names": [
+      "Mr1",
+      "daz bonzo",
+      "steel"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/mrtwo.jpg"
+    ],
+    "names": [
+      "Mr2",
+      "bon clay",
+      "nakama"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/mrthree.jpg"
+    ],
+    "names": [
+      "Mr3",
+      "clay"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/mrfour.jpg"
+    ],
+    "names": [
+      "Mr4",
+      "baseball"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/nami.jpg"
+    ],
+    "names": [
+      "Nami",
+      "theif"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/robin.jpg"
+    ],
+    "names": [
+      "Robin",
+      "russian"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/sanji.jpg"
+    ],
+    "names": [
+      "Sanji",
+      "nose bleed"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/shanks.jpg"
+    ],
+    "names": [
+      "Shanks",
+      "screen time"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/smoker.jpeg"
+    ],
+    "names": [
+      "Smoker",
+      "smoke"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/tashiigui.jpg"
+    ],
+    "names": [
+      "Tashiigui",
+      "tashigi",
+      "sword girl"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/ussup.jpg",
+      "extra_images/onepiece/ussup1.jpg"
+    ],
+    "names": [
+      "Ussup",
+      "usop",
+      "ussop",
+      "long nose"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/onepiece/zorro.jpg"
+    ],
+    "names": [
+      "Zorro",
+      "zoro",
+      "lost"
+    ],
+    "anime": "One Piece"
+  },
+  {
+    "imgs": [
+      "images/bleach/Isane.webp"
+    ],
+    "names": [
+      "Isane",
+      "unohana freind"
+    ],
     "anime": "Bleach"
   },
   {
-    "img": "images/bleach/rukia.jpg",
-    "name": "Rukia",
+    "imgs": [
+      "images/bleach/aizen.png",
+      "extra_images/bleach/aizen1.jpeg",
+      "extra_images/bleach/aizen2.webp",
+      "extra_images/bleach/aizen3.webp",
+      "extra_images/bleach/aizen4.jpg"
+    ],
+    "names": [
+      "Aizen",
+      "troll"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/baragan.jpg",
+      "extra_images/bleach/Baragan1.webp",
+      "extra_images/bleach/baragan2.jpeg"
+    ],
+    "names": [
+      "Baragan",
+      "espada 2"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/byakuya.jpg",
+      "extra_images/bleach/byakuya1.webp"
+    ],
+    "names": [
+      "Byakuya",
+      "sinbonzakura"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/chad.jpg",
+      "extra_images/bleach/chad1.jpg",
+      "extra_images/bleach/chad2.jpg"
+    ],
+    "names": [
+      "Chad",
+      "never lose"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/espadaeight.jpg",
+      "extra_images/bleach/espadaeight1.jpg"
+    ],
+    "names": [
+      "Espada 8",
+      "salazyalabor"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/gin.jpg",
+      "extra_images/bleach/gin1.jpg"
+    ],
+    "names": [
+      "Gin",
+      "eyes"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/grimmjow.jpeg",
+      "extra_images/bleach/grimmjow1.webp"
+    ],
+    "names": [
+      "Grimjow",
+      "blue",
+      "panthera",
+      "espada 6"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/hallibel.png",
+      "extra_images/bleach/hallibel1.jpg"
+    ],
+    "names": [
+      "Hallibel",
+      "espada 3",
+      "halibel"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/hisagi.jpg",
+      "extra_images/bleach/hisagi1.jpg"
+    ],
+    "names": [
+      "Hisagi",
+      "69"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/ichigo.jpg",
+      "extra_images/bleach/ichigo1.jpg",
+      "extra_images/bleach/ichigo2.jpg"
+    ],
+    "names": [
+      "Ichigo",
+      "number one"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/ikaku.jpeg"
+    ],
+    "names": [
+      "Ikaku",
+      "baldy"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/ishida.jpg"
+    ],
+    "names": [
+      "Ishida",
+      "quinchy"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/ishin.jpg"
+    ],
+    "names": [
+      "Ishin",
+      "ichigo dad"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/kenpachi.jpg"
+    ],
+    "names": [
+      "Kenpachi",
+      "killer"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/kira.jpg"
+    ],
+    "names": [
+      "Kira",
+      "squad 3"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/kumamora.webp"
+    ],
+    "names": [
+      "Kumamora",
+      "wolf",
+      "dogg"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/mayuri.jpg"
+    ],
+    "names": [
+      "Mayuri",
+      "crazy"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/momo.jpg"
+    ],
+    "names": [
+      "Momo",
+      "manipulated"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/nel.jpg"
+    ],
+    "names": [
+      "Nel",
+      "green"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/noitra.jpg"
+    ],
+    "names": [
+      "Noitra",
+      "espada 5"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/nose.jpg"
+    ],
+    "names": [
+      "Nose"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/orihime.jpg"
+    ],
+    "names": [
+      "Orihime",
+      "boobs"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/rangiku.png"
+    ],
+    "names": [
+      "Rangiku",
+      "super hot"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/renji.jpg"
+    ],
+    "names": [
+      "Renji",
+      "never win"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/rukia.jpg"
+    ],
+    "names": [
+      "Rukia",
+      "bankai"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/shinji.jpg"
+    ],
+    "names": [
+      "Shinji",
+      "rizz"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/shinsui.jpg"
+    ],
+    "names": [
+      "Shinsui",
+      "games"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/shitsugaya.jpg"
+    ],
+    "names": [
+      "Shitsugaya",
+      "hitsugaya"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/soifon.jpg"
+    ],
+    "names": [
+      "Soifon",
+      "bazoka"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/stark.png"
+    ],
+    "names": [
+      "Stark",
+      "lillinette"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/tosen.jpg"
+    ],
+    "names": [
+      "Tosen",
+      "blind"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/ukitake.jpg"
+    ],
+    "names": [
+      "Ukitake",
+      "white hair"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/uliquiora.png"
+    ],
+    "names": [
+      "Uliquiora",
+      "empty",
+      "espada 4"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/unohana.jpeg"
+    ],
+    "names": [
+      "Unohana",
+      "scary"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/urahara.jpg"
+    ],
+    "names": [
+      "Urahara",
+      "smart"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/yamamoto.png"
+    ],
+    "names": [
+      "Yamamoto",
+      "captain"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/yami.webp"
+    ],
+    "names": [
+      "Yami",
+      "espada 0",
+      "espada 10"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/yuhwash.jpg"
+    ],
+    "names": [
+      "Yuhwash",
+      "black"
+    ],
+    "anime": "Bleach"
+  },
+  {
+    "imgs": [
+      "images/bleach/yuruwichi.jpeg"
+    ],
+    "names": [
+      "Yuruwichi",
+      "sexy"
+    ],
     "anime": "Bleach"
   }
 ]

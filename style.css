@@ -1,105 +1,373 @@
-body {
-  background: #111;
-  color: white;
-  text-align: center;
-  font-family: Arial;
-  padding: 10px;
+/* ============================================
+   ANIME GUESS GAME — "NEON MANGA" STYLESHEET
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@400;600;700&display=swap');
+
+/* ── CSS Variables ── */
+:root {
+  --bg-deep:       #05050f;
+  --bg-panel:      #0d0d1a;
+  --bg-card:       #12122a;
+  --accent-pink:   #ff2d78;
+  --accent-cyan:   #00e5ff;
+  --accent-yellow: #ffe600;
+  --accent-purple: #9b4dff;
+  --text-main:     #f0f0ff;
+  --text-muted:    #6e6e9a;
+  --border-glow:   rgba(0, 229, 255, 0.3);
+  --shadow-pink:   0 0 20px rgba(255, 45, 120, 0.5);
+  --shadow-cyan:   0 0 20px rgba(0, 229, 255, 0.4);
+  --font-display:  'Bangers', cursive;
+  --font-body:     'Rajdhani', sans-serif;
 }
 
-h1 { margin-bottom: 20px; }
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(155, 77, 255, 0.18) 0%, transparent 70%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(0, 229, 255, 0.04) 39px,
+      rgba(0, 229, 255, 0.04) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 39px,
+      rgba(0, 229, 255, 0.04) 39px,
+      rgba(0, 229, 255, 0.04) 40px
+    );
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px 12px 60px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Page Title ── */
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  letter-spacing: 0.06em;
+  color: var(--text-main);
+  text-shadow:
+    0 0 12px var(--accent-cyan),
+    0 0 36px rgba(0, 229, 255, 0.35),
+    4px 4px 0 var(--accent-purple);
+  margin-bottom: 8px;
+  animation: titlePulse 3s ease-in-out infinite alternate;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  margin: 6px auto 20px;
+  background: linear-gradient(90deg, transparent, var(--accent-pink), var(--accent-cyan), transparent);
+  border-radius: 2px;
+}
+
+@keyframes titlePulse {
+  from { text-shadow: 0 0 12px var(--accent-cyan), 0 0 36px rgba(0,229,255,0.35), 4px 4px 0 var(--accent-purple); }
+  to   { text-shadow: 0 0 22px var(--accent-pink), 0 0 50px rgba(255,45,120,0.4), 4px 4px 0 var(--accent-purple); }
+}
+
+/* ── Mode Select Screen ── */
+#modeScreen {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ── Multiplayer Setup ── */
+#multiSetup {
+  margin: 24px auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: 14px;
+  padding: 24px 32px;
+  max-width: 420px;
+  box-shadow: var(--shadow-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ── Buttons ── */
+button {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.07em;
+  padding: 10px 28px;
+  margin: 6px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid var(--accent-cyan);
+  background: transparent;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.18s ease;
+  box-shadow: inset 0 0 0 0 var(--accent-cyan);
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-cyan);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+  z-index: 0;
+}
+
+button span, button {
+  position: relative;
+  z-index: 1;
+}
+
+button:hover {
+  color: var(--bg-deep);
+  text-shadow: none;
+}
+
+button:hover::before {
+  transform: scaleX(1);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Next Round button — green variant */
+#nextBtn {
+  border-color: var(--accent-yellow);
+  color: var(--accent-yellow);
+  font-size: 1.3rem;
+  padding: 12px 36px;
+  margin-top: 18px;
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#nextBtn::before { background: var(--accent-yellow); }
+#nextBtn:hover { color: var(--bg-deep); }
+
+@keyframes popIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+/* ── Inputs ── */
+input {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  width: 220px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 229, 255, 0.35);
+  background: rgba(0, 229, 255, 0.06);
+  color: var(--text-main);
+  margin: 6px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder { color: var(--text-muted); }
+
+input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.3);
+  background: rgba(0, 229, 255, 0.1);
+}
+
+/* ── Game Screen ── */
+#gameScreen {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* ── Attempt Info ── */
+#attemptInfo {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid rgba(110, 110, 154, 0.35);
+  border-radius: 30px;
+  padding: 4px 20px;
+  margin: 10px 0 6px;
+}
+
+/* ── Score Board ── */
+#scoreBoard {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  color: var(--accent-yellow);
+  text-shadow: 0 0 10px rgba(255, 230, 0, 0.4);
+  margin: 8px 0;
+}
+
+/* ── Character Image Container ── */
 #gameContainer {
   position: relative;
   width: 90vw;
-  max-width: 500px;
-  height: 500px;
-  margin: 20px auto;
+  max-width: 480px;
+  height: 460px;
+  margin: 18px auto;
+  border-radius: 16px;
   overflow: hidden;
-  border: 2px solid #333;
-  border-radius: 8px;
+  border: 2px solid rgba(0, 229, 255, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(0, 229, 255, 0.12),
+    0 0 40px rgba(0, 229, 255, 0.15),
+    inset 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Corner decorations */
+#gameContainer::before,
+#gameContainer::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  z-index: 3;
+  pointer-events: none;
+}
+#gameContainer::before {
+  top: 8px; left: 8px;
+  border-top: 3px solid var(--accent-pink);
+  border-left: 3px solid var(--accent-pink);
+}
+#gameContainer::after {
+  bottom: 8px; right: 8px;
+  border-bottom: 3px solid var(--accent-cyan);
+  border-right: 3px solid var(--accent-cyan);
 }
 
 #characterImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: filter 0.7s ease, transform 0.7s ease;
 }
 
-#attemptInfo {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #aaa;
+/* ── Silhouette Mode ── */
+.silhouette {
+  filter: brightness(0) saturate(0) !important;
 }
 
-#scoreBoard {
-  font-size: 20px;
-  margin: 8px 0;
-}
-
+/* ── Anime Category Label ── */
 #animeCategory {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-pink);
+  text-shadow: 0 0 14px rgba(255, 45, 120, 0.5);
+  margin: 10px 0 4px;
+  text-transform: uppercase;
 }
 
+/* ── Result Text ── */
 #result {
-  font-size: 18px;
-  min-height: 28px;
-  color: #f0c040;
+  font-size: 1.2rem;
+  font-weight: 700;
+  min-height: 32px;
+  color: var(--accent-yellow);
+  text-shadow: 0 0 10px rgba(255, 230, 0, 0.5);
+  letter-spacing: 0.04em;
+  transition: opacity 0.25s;
 }
 
-button {
-  padding: 10px 22px;
-  font-size: 16px;
-  margin: 6px;
-  cursor: pointer;
-  border-radius: 6px;
-  border: none;
-  background: #fff;
-  color: #111;
-  font-weight: bold;
+/* ── Solo Guess Area ── */
+#soloGuess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 12px;
 }
 
-button:hover { background: #ddd; }
-
-input {
-  padding: 10px;
-  font-size: 16px;
-  width: 200px;
-  border-radius: 6px;
-  border: none;
-  margin: 6px;
-}
-
-#modeScreen { margin: 30px 0; }
-
-#multiSetup { margin: 20px 0; }
-
+/* ── Multiplayer Guess Area ── */
 #multiGuess {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
-#p1GuessArea, #p2GuessArea {
+#p1GuessArea,
+#p2GuessArea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: 12px;
+  padding: 16px 20px;
+  min-width: 190px;
+  box-shadow: var(--shadow-cyan);
 }
 
-#p1Status, #p2Status {
-  font-size: 22px;
-  min-height: 28px;
+/* Player labels */
+#p1Label,
+#p2Label {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
 }
 
-.silhouette { filter: brightness(0); }
+#p1Label { color: var(--accent-pink); text-shadow: var(--shadow-pink); }
+#p2Label { color: var(--accent-cyan); text-shadow: var(--shadow-cyan); }
 
-#nextBtn {
-  background: #4caf50;
-  color: white;
-  margin-top: 16px;
+#p1GuessArea input { border-color: rgba(255, 45, 120, 0.4); }
+#p1GuessArea input:focus { border-color: var(--accent-pink); box-shadow: 0 0 14px rgba(255,45,120,0.3); }
+#p1GuessArea button { border-color: var(--accent-pink); color: var(--accent-pink); }
+#p1GuessArea button::before { background: var(--accent-pink); }
+
+/* ── Status Icons ── */
+#p1Status,
+#p2Status {
+  font-size: 1.6rem;
+  min-height: 32px;
+  line-height: 1;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--accent-purple); border-radius: 4px; }
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  #gameContainer { height: 360px; }
+  #multiGuess { gap: 16px; }
+  #p1GuessArea, #p2GuessArea { padding: 12px 14px; min-width: 150px; }
+  input { width: 170px; }
 }
