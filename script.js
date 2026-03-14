@@ -5,9 +5,10 @@ let currentCharacter = null
 let currentImg = null
 
 let attempt = 1
-const maxAttempts = 3
-const zoomLevels = [4.5, 2.8, 1.5]
-const pointsPerAttempt = [4, 2, 1]
+let maxAttempts = 3
+let zoomLevels = [4.5, 2.8, 1.5]
+let pointsPerAttempt = [4, 2, 1]
+let roundSize = 60
 
 let mode = "solo"
 let p1Name = "Player 1"
@@ -22,6 +23,12 @@ let p2Correct = false
 let roundCorrect = 0
 let roundWrong = 0
 
+// settings
+let settingMaxAttempts = 3
+let settingRoundSize = 60
+let settingPoints = [4, 2, 1]
+let settingEnabledCategories = []   // filled after load
+
 const image        = document.getElementById("characterImage")
 const categoryText = document.getElementById("animeCategory")
 const resultText   = document.getElementById("result")
@@ -34,6 +41,10 @@ const skipBtn      = document.getElementById("skipBtn")
 async function loadCharacters(){
   const res = await fetch("characters.json")
   characters = await res.json()
+  // collect all unique categories
+  const cats = [...new Set(characters.map(c => c.anime))]
+  settingEnabledCategories = [...cats]
+  buildCategoryCheckboxes(cats)
 }
 
 function shuffle(arr){
@@ -46,7 +57,8 @@ function shuffle(arr){
 }
 
 function buildQueue(){
-  roundQueue = shuffle(characters).slice(0, Math.min(60, characters.length))
+  const filtered = characters.filter(c => settingEnabledCategories.includes(c.anime))
+  roundQueue = shuffle(filtered).slice(0, Math.min(settingRoundSize, filtered.length))
   roundIndex = 0
   roundCorrect = 0
   roundWrong = 0
@@ -66,13 +78,29 @@ function randomImg(character){
   return imgs[Math.floor(Math.random() * imgs.length)]
 }
 
+function focusInput(){
+  if(mode === "solo"){
+    const inp = document.getElementById("guessInput")
+    inp.focus()
+    inp.select()
+  }
+}
+
+// ── SCREENS ───────────────────────────────────────────────────────
+function showScreen(id){
+  const screens = ["modeScreen","multiSetup","gameScreen","settingsScreen"]
+  screens.forEach(s => document.getElementById(s).style.display = "none")
+  document.getElementById(id).style.display = "block"
+}
+
 // ── MODE SELECT ───────────────────────────────────────────────────
 function setSolo(){
   mode = "solo"
-  document.getElementById("modeScreen").style.display = "none"
-  document.getElementById("gameScreen").style.display = "block"
+  applySettings()
+  showScreen("gameScreen")
   document.getElementById("soloGuess").style.display = "block"
   document.getElementById("multiGuess").style.display = "none"
+  document.getElementById("settingsBtn").style.display = "inline-block"
   p1Score = 0
   updateScoreBoard()
   buildQueue()
@@ -81,8 +109,7 @@ function setSolo(){
 
 function setMulti(){
   mode = "multi"
-  document.getElementById("modeScreen").style.display = "none"
-  document.getElementById("multiSetup").style.display = "block"
+  showScreen("multiSetup")
 }
 
 function startMulti(){
@@ -92,13 +119,83 @@ function startMulti(){
   document.getElementById("p2Label").innerText = p2Name
   p1Score = 0
   p2Score = 0
-  document.getElementById("multiSetup").style.display = "none"
-  document.getElementById("gameScreen").style.display = "block"
+  showScreen("gameScreen")
   document.getElementById("soloGuess").style.display = "none"
   document.getElementById("multiGuess").style.display = "flex"
+  document.getElementById("settingsBtn").style.display = "none"
   updateScoreBoard()
   buildQueue()
   beginRound()
+}
+
+// ── SETTINGS ──────────────────────────────────────────────────────
+function openSettings(){
+  showScreen("settingsScreen")
+  // populate fields with current settings
+  document.getElementById("setAttempts").value = settingMaxAttempts
+  document.getElementById("setRoundSize").value = settingRoundSize
+  updatePointFields(settingMaxAttempts)
+}
+
+function applySettings(){
+  settingMaxAttempts = parseInt(document.getElementById("setAttempts")?.value) || 3
+  settingRoundSize   = parseInt(document.getElementById("setRoundSize")?.value) || 60
+  maxAttempts = settingMaxAttempts
+
+  // read points fields
+  settingPoints = []
+  zoomLevels = []
+  const baseZooms = [4.5, 3.5, 2.8, 2.2, 1.8, 1.5]
+  for(let i = 0; i < maxAttempts; i++){
+    const pts = parseInt(document.getElementById("pts_" + i)?.value) || (maxAttempts - i)
+    settingPoints.push(pts)
+    zoomLevels.push(baseZooms[i] || 1.5)
+  }
+  pointsPerAttempt = settingPoints
+
+  // read categories
+  settingEnabledCategories = []
+  document.querySelectorAll(".catCheck:checked").forEach(cb => {
+    settingEnabledCategories.push(cb.value)
+  })
+  if(settingEnabledCategories.length === 0){
+    // if nothing checked, enable all
+    settingEnabledCategories = [...new Set(characters.map(c => c.anime))]
+  }
+}
+
+function saveSettings(){
+  applySettings()
+  showScreen("gameScreen")
+  focusInput()
+}
+
+function updatePointFields(n){
+  n = parseInt(n)
+  const container = document.getElementById("pointFields")
+  container.innerHTML = ""
+  const defaults = [4, 2, 1, 1, 1, 1]
+  for(let i = 0; i < n; i++){
+    const val = settingPoints[i] !== undefined ? settingPoints[i] : (defaults[i] || 1)
+    container.innerHTML += `
+      <div>
+        <label>Attempt ${i+1} points:</label>
+        <input type="number" id="pts_${i}" value="${val}" min="0" max="99" style="width:60px">
+      </div>`
+  }
+}
+
+function buildCategoryCheckboxes(cats){
+  const container = document.getElementById("categoryChecks")
+  if(!container) return
+  container.innerHTML = ""
+  cats.forEach(cat => {
+    container.innerHTML += `
+      <label style="display:block;margin:4px 0">
+        <input type="checkbox" class="catCheck" value="${cat}" checked>
+        ${cat}
+      </label>`
+  })
 }
 
 // ── ROUND ─────────────────────────────────────────────────────────
@@ -137,14 +234,13 @@ function beginRound(){
   }
 
   updateAttemptInfo()
+
+  // auto focus input
+  setTimeout(() => focusInput(), 100)
 }
 
 function setZoom(z, animate = true){
-  if(animate){
-    image.style.transition = "transform 0.6s ease"
-  } else {
-    image.style.transition = "none"
-  }
+  image.style.transition = animate ? "transform 0.6s ease" : "none"
   image.style.transform = "scale(" + z + ")"
   let ox = 25 + Math.random() * 50
   let oy = 15 + Math.random() * 70
@@ -177,8 +273,8 @@ function skipAttempt(){
     roundWrong++
     revealFull()
     resultText.innerText = "⏭ Skipped! It was " + displayName()
-    nextBtn.style.display = "inline-block"
-    skipBtn.style.display = "none"
+    // auto next after 2s
+    setTimeout(() => beginRound(), 2000)
     if(mode === "multi") resetMultiInputs()
     return
   }
@@ -194,9 +290,9 @@ function skipAttempt(){
     resetMultiInputs()
   }
 
-  if(attempt >= maxAttempts){
-    skipBtn.style.display = "none"
-  }
+  if(attempt >= maxAttempts) skipBtn.style.display = "none"
+
+  setTimeout(() => focusInput(), 100)
 }
 
 // ── SOLO ──────────────────────────────────────────────────────────
@@ -212,7 +308,9 @@ function submitSolo(){
     updateScoreBoard()
     revealFull()
     resultText.innerText = "✅ Correct! It was " + displayName() + "  (+" + pts + " pts)"
-    nextBtn.style.display = "inline-block"
+    // auto next after 1.5s
+    setTimeout(() => beginRound(), 1500)
+
   } else {
     if(attempt < maxAttempts){
       attempt++
@@ -221,11 +319,13 @@ function submitSolo(){
       resultText.innerText = "❌ Wrong! Attempt " + attempt
       document.getElementById("guessInput").value = ""
       if(attempt >= maxAttempts) skipBtn.style.display = "none"
+      setTimeout(() => focusInput(), 100)
     } else {
       roundWrong++
       revealFull()
       resultText.innerText = "❌ Out of attempts! It was " + displayName()
-      nextBtn.style.display = "inline-block"
+      // auto next after 2s
+      setTimeout(() => beginRound(), 2000)
     }
   }
 }
@@ -269,7 +369,7 @@ function checkBothGuessed(){
     else if(p1Correct)         msg = "🎉 " + p1Name + " got it! +" + pts + " pts"
     else                       msg = "🎉 " + p2Name + " got it! +" + pts + " pts"
     resultText.innerText = msg + "  —  " + displayName()
-    nextBtn.style.display = "inline-block"
+    setTimeout(() => beginRound(), 1500)
   } else {
     if(attempt < maxAttempts){
       attempt++
@@ -282,7 +382,7 @@ function checkBothGuessed(){
       roundWrong++
       revealFull()
       resultText.innerText = "❌ Both out! It was " + displayName()
-      nextBtn.style.display = "inline-block"
+      setTimeout(() => beginRound(), 2000)
     }
   }
 }
@@ -300,15 +400,7 @@ function resetMultiInputs(){
   document.getElementById("p2Status").innerText = ""
 }
 
-// ── NEXT / SUMMARY ────────────────────────────────────────────────
-function nextRound(){
-  if(roundIndex >= roundQueue.length){
-    showRoundSummary()
-    return
-  }
-  beginRound()
-}
-
+// ── SUMMARY ───────────────────────────────────────────────────────
 function showRoundSummary(){
   document.getElementById("gameContainer").style.display = "none"
   document.getElementById("soloGuess").style.display = "none"
@@ -326,7 +418,8 @@ function showRoundSummary(){
       <p>✅ Correct: <strong>${roundCorrect}</strong></p>
       <p>❌ Wrong / Skipped: <strong>${roundWrong}</strong></p>
       <p>🏆 Final Score: <strong>${p1Score}</strong></p>
-      <button onclick="restartGame()">Play Again</button>
+      <button onclick="restartGame()">🔁 Play Again</button>
+      <button onclick="returnToMenu()">🏠 Menu</button>
     `
   } else {
     const winner = p1Score > p2Score
@@ -337,38 +430,53 @@ function showRoundSummary(){
     summary = `
       <h2>Round Over!</h2>
       <p>✅ Correct rounds: <strong>${roundCorrect}</strong></p>
-      <p>❌ Wrong / Skipped rounds: <strong>${roundWrong}</strong></p>
+      <p>❌ Wrong / Skipped: <strong>${roundWrong}</strong></p>
       <p>🏆 ${p1Name}: <strong>${p1Score}</strong> pts</p>
       <p>🏆 ${p2Name}: <strong>${p2Score}</strong> pts</p>
       <p><strong>${winner}</strong></p>
-      <button onclick="restartGame()">Play Again</button>
+      <button onclick="restartGame()">🔁 Play Again</button>
+      <button onclick="returnToMenu()">🏠 Menu</button>
     `
   }
-
   resultText.innerHTML = summary
 }
 
-function restartGame(){
+// ── RETURN / RESET ────────────────────────────────────────────────
+function returnToMenu(){
   document.getElementById("gameContainer").style.display = "block"
   document.getElementById("animeCategory").style.display = "block"
-  document.getElementById("gameScreen").style.display = "none"
-  document.getElementById("modeScreen").style.display = "block"
   resultText.innerHTML = ""
   p1Score = 0
   p2Score = 0
   roundCorrect = 0
   roundWrong = 0
+  showScreen("modeScreen")
+}
+
+function resetRound(){
+  p1Score = 0
+  p2Score = 0
+  roundCorrect = 0
+  roundWrong = 0
+  document.getElementById("gameContainer").style.display = "block"
+  document.getElementById("animeCategory").style.display = "block"
+  resultText.innerHTML = ""
+  updateScoreBoard()
+  buildQueue()
+  beginRound()
+}
+
+function restartGame(){
+  returnToMenu()
 }
 
 // ── ENTER KEY ─────────────────────────────────────────────────────
 document.getElementById("guessInput").addEventListener("keydown", function(e){
   if(e.key === "Enter") submitSolo()
 })
-
 document.getElementById("p1Input").addEventListener("keydown", function(e){
   if(e.key === "Enter") submitP1()
 })
-
 document.getElementById("p2Input").addEventListener("keydown", function(e){
   if(e.key === "Enter") submitP2()
 })

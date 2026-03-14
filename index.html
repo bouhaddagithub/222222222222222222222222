@@ -20,10 +20,44 @@
   <input id="p1Name" placeholder="Your name" maxlength="12">
   <input id="p2Name" placeholder="Friend's name" maxlength="12">
   <button onclick="startMulti()">Start Multiplayer</button>
+  <br>
+  <button onclick="returnToMenu()">🏠 Menu</button>
+</div>
+
+<!-- SETTINGS -->
+<div id="settingsScreen" style="display:none">
+  <h2>Settings</h2>
+
+  <label>Number of attempts:
+    <input type="number" id="setAttempts" value="3" min="1" max="6"
+      oninput="updatePointFields(this.value)" style="width:60px">
+  </label>
+  <br><br>
+
+  <label>Images per round:
+    <input type="number" id="setRoundSize" value="60" min="1" max="200" style="width:70px">
+  </label>
+  <br><br>
+
+  <div id="pointFields"></div>
+  <br>
+
+  <strong>Categories:</strong>
+  <div id="categoryChecks"></div>
+  <br>
+
+  <button onclick="saveSettings()">✅ Save & Back</button>
+  <button onclick="returnToMenu()">🏠 Menu</button>
 </div>
 
 <!-- GAME -->
 <div id="gameScreen" style="display:none">
+
+  <div id="topBar">
+    <button onclick="returnToMenu()">🏠 Menu</button>
+    <button onclick="resetRound()">🔄 Reset</button>
+    <button id="settingsBtn" onclick="openSettings()" style="display:none">⚙️ Settings</button>
+  </div>
 
   <div id="attemptInfo">Attempt 1 / 3</div>
   <div id="scoreBoard"></div>
@@ -37,28 +71,31 @@
 
   <!-- SOLO GUESS -->
   <div id="soloGuess">
-    <input id="guessInput" placeholder="Type character name">
+    <input id="guessInput" placeholder="Type character name" autocomplete="off">
     <button onclick="submitSolo()">Guess</button>
+    <button id="skipBtn" style="display:none" onclick="skipAttempt()">⏭ Skip</button>
   </div>
 
   <!-- MULTIPLAYER GUESS -->
   <div id="multiGuess" style="display:none">
     <div id="p1GuessArea">
       <strong id="p1Label"></strong>
-      <input id="p1Input" placeholder="Type character name">
+      <input id="p1Input" placeholder="Type character name" autocomplete="off">
       <button onclick="submitP1()">Guess</button>
       <span id="p1Status"></span>
     </div>
     <div id="p2GuessArea">
       <strong id="p2Label"></strong>
-      <input id="p2Input" placeholder="Type character name">
+      <input id="p2Input" placeholder="Type character name" autocomplete="off">
       <button onclick="submitP2()">Guess</button>
       <span id="p2Status"></span>
+    </div>
+    <div style="width:100%;text-align:center;margin-top:10px">
+      <button id="skipBtn" style="display:none" onclick="skipAttempt()">⏭ Skip</button>
     </div>
   </div>
 
   <button id="nextBtn" style="display:none" onclick="nextRound()">Next Round</button>
-  <button id="skipBtn" style="display:none" onclick="skipAttempt()">⏭ Skip Attempt</button>
 
 </div>
 

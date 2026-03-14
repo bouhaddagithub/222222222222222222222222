@@ -110,7 +110,38 @@ h1::after {
   align-items: center;
   gap: 14px;
 }
+#topBar {
+  margin: 10px 0 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
+#settingsScreen {
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: left;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+#settingsScreen h2 {
+  text-align: center;
+}
+
+#settingsScreen label {
+  font-size: 16px;
+}
+
+#pointFields div {
+  margin: 6px 0;
+}
+
+#categoryChecks {
+  margin-top: 8px;
+}
 /* ── Buttons ── */
 button {
   font-family: var(--font-display);
